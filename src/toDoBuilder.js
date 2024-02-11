@@ -15,7 +15,6 @@ export class ToDo {
         if (difficulty == "easy") {easyArray.push(this)};
         if (difficulty == "moderate") {moderateArray.push(this)};
         if (difficulty == "hard") {hardArray.push(this)};
-
     }
 }
 

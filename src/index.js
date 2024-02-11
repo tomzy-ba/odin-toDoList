@@ -26,3 +26,21 @@ submitDialog.addEventListener("click", () => {
     console.log(easyArray)
     console.log(toDoArray)
 })
+
+const homeBtn = document.querySelector("#homeButton");
+const easyBtn = document.querySelector("#easyButton");
+const moderateBtn = document.querySelector("#moderateButton");
+const hardBtn = document.querySelector("#hardButton");
+
+homeBtn.addEventListener("click", () => {
+    toDoDisplay(toDoArray)
+})
+easyBtn.addEventListener("click", () => {
+    toDoDisplay(easyArray)
+})
+moderateBtn.addEventListener("click", () => {
+    toDoDisplay(moderateArray)
+})
+hardBtn.addEventListener("click", () => {
+    toDoDisplay(hardArray)
+})
