@@ -17,13 +17,20 @@ export function toDoDisplay(array) {
         toDoLi.append(toDoInfo);
 
         for (const property in obj) {
-        const toDoSummary = document.createElement("div")
+        const toDoSummary = document.createElement("div");
         toDoInfo.append(toDoSummary);
+
+        const propertyTitle = document.createElement("span");
+        propertyTitle.innerText = property;
+        toDoSummary.append(propertyTitle);
+
+        const propertyValue = document.createElement("span");
+        propertyValue.innerText = obj[property];
+        toDoSummary.append(propertyValue);
 
         }
 
         toDoLi.addEventListener("click", () => {
-            console.log("hi")
             toDoInfo.classList.toggle("hidden");
         })
     });
