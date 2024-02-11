@@ -8,19 +8,22 @@ export function toDoDisplay(array) {
     homeContent.append(homeList)
 
     array.forEach(obj => {
-        const toDoLi = document.createElement("li");
+        const toDoLi = document.createElement("div");
+        toDoLi.innerText = obj.title;
         homeList.append(toDoLi)
         
-        const toDoBtn = document.createElement("button");
-        toDoBtn.innerText = obj.title;
-        toDoLi.append(toDoBtn)
-
         const toDoInfo = document.createElement("div");
-        toDoInfo.innerText = obj.title;
         toDoInfo.classList.add("hidden");
-        content.append(toDoInfo);
+        toDoLi.append(toDoInfo);
 
-        toDoBtn.addEventListener("click", () => {
+        for (const property in obj) {
+        const toDoSummary = document.createElement("div")
+        toDoInfo.append(toDoSummary);
+
+        }
+
+        toDoLi.addEventListener("click", () => {
+            console.log("hi")
             toDoInfo.classList.toggle("hidden");
         })
     });
