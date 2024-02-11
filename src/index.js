@@ -4,7 +4,6 @@ import { toDoDisplay } from "./toDoDisplay";
 import './styles.css'
 
 
-toDoDisplay(easyArray);
 const addBtn = document.querySelector("#addButton");
 const dialog = document.querySelector("#dialog")
 const submitDialog = document.querySelector("#submitDialog");
@@ -33,14 +32,17 @@ const moderateBtn = document.querySelector("#moderateButton");
 const hardBtn = document.querySelector("#hardButton");
 
 homeBtn.addEventListener("click", () => {
-    toDoDisplay(toDoArray)
+    toDoDisplay(toDoArray, "Home")
 })
 easyBtn.addEventListener("click", () => {
-    toDoDisplay(easyArray)
+    toDoDisplay(easyArray, "Easy")
 })
 moderateBtn.addEventListener("click", () => {
-    toDoDisplay(moderateArray)
+    toDoDisplay(moderateArray, "Moderate")
 })
 hardBtn.addEventListener("click", () => {
-    toDoDisplay(hardArray)
+    toDoDisplay(hardArray, "Hard")
 })
+
+
+toDoDisplay(toDoArray, "Home");

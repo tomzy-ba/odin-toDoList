@@ -1,14 +1,20 @@
-export function toDoDisplay(array) {
+export function toDoDisplay(array, title) {
     const content = document.querySelector("#content");
     content.innerHTML = "";
 
+
     const homeContent = document.createElement("div");
     content.append(homeContent);
+
+    const homeTitle = document.createElement("h1");
+    homeTitle.innerText = title;
+    homeContent.append(homeTitle)
 
     array.forEach(obj => {
         const toDoDiv = document.createElement("div");
         toDoDiv.innerText = obj.title;
         homeContent.append(toDoDiv)
+        
         
         const toDoInfo = document.createElement("div");
         toDoInfo.classList.add("hidden");
