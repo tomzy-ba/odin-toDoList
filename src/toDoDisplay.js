@@ -18,6 +18,7 @@ export function toDoDisplay(array) {
         
         const toDoInfo = document.createElement("div");
         toDoInfo.classList.add("hidden");
+        toDoDiv.classList.add("toDoDiv")
         toDoDiv.append(toDoInfo);
 
         for (const property in obj) {
@@ -36,8 +37,9 @@ export function toDoDisplay(array) {
         editButton.innerText = "Edit";
         toDoInfo.append(editButton);
         editButton.addEventListener("click", () => {
-            propertyValue.innerText = prompt("enter edit here")
-
+            let newProperty = prompt("Enter edit here");
+            propertyValue.innerText = newProperty;
+            obj[propertyTitle.innerText] = newProperty;
         });
         
 
