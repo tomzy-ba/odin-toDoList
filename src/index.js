@@ -3,11 +3,8 @@ import { toDoDisplay } from "./toDoDisplay";
 
 import './styles.css'
 
-new ToDo("hi","what","is", "up", "k", );
-new ToDo("lol");
-new ToDo("bruh");
 
-toDoDisplay(toDoArray);
+toDoDisplay(easyArray);
 const addBtn = document.querySelector("#addButton");
 const dialog = document.querySelector("#dialog")
 const submitDialog = document.querySelector("#submitDialog");

@@ -12,9 +12,9 @@ export class ToDo {
         this.status = status;
         this.difficulty = difficulty;
         toDoArray.push(this)
-        if (this.difficulty == "easy") {easyArray.push(this)};
-        if (this.difficulty == "moderate") {moderateArray.push(this)};
-        if (this.difficulty == "hard") {hardArray.push(this)};
+        if (difficulty == "easy") {easyArray.push(this)};
+        if (difficulty == "moderate") {moderateArray.push(this)};
+        if (difficulty == "hard") {hardArray.push(this)};
 
     }
 }
