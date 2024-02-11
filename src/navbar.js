@@ -5,5 +5,4 @@ const moderateBtn = document.querySelector("#moderateButton");
 const hardBtn = document.querySelector("#hardButton");
 const addBtn = document.querySelector("#addButton")
 
-homeBtn
    

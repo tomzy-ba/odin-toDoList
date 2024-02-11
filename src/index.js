@@ -17,21 +17,31 @@ const easyBtn = document.querySelector("#easyButton");
 const moderateBtn = document.querySelector("#moderateButton");
 const hardBtn = document.querySelector("#hardButton");
 
-homeBtn.addEventListener("click", () => {
-    toDoDisplay(toDoArray, "Home")
-})
-easyBtn.addEventListener("click", () => {
-    toDoDisplay(easyArray, "Easy")
-})
-moderateBtn.addEventListener("click", () => {
-    toDoDisplay(moderateArray, "Moderate")
-})
-hardBtn.addEventListener("click", () => {
-    toDoDisplay(hardArray, "Hard")
-})
+function navbar() {
+    const heading = document.querySelector("#heading");
+    heading.innerHTML = "Home";
+
+    homeBtn.addEventListener("click", () => {
+        toDoDisplay(toDoArray)
+        heading.innerHTML = "Home"
+    })
+    easyBtn.addEventListener("click", () => {
+        toDoDisplay(easyArray)
+        heading.innerHTML = "Easy"
+    })
+    moderateBtn.addEventListener("click", () => {
+        toDoDisplay(moderateArray)
+        heading.innerHTML = "Moderate"
+    })
+    hardBtn.addEventListener("click", () => {
+        toDoDisplay(hardArray)
+        heading.innerHTML = "Hard"
+    })
+    }
 
 
-toDoDisplay(toDoArray, "Home");
+navbar();
+toDoDisplay(toDoArray);
 
 
 addToDo();
