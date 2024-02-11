@@ -1,9 +1,9 @@
-import { ToDo, toDoArray } from "./toDoBuilder";
+import { ToDo, toDoArray, easyArray, moderateArray, hardArray } from "./toDoBuilder";
 import { toDoDisplay } from "./toDoDisplay";
 
 import './styles.css'
 
-new ToDo("hi","what","is", "up");
+new ToDo("hi","what","is", "up", "k", );
 new ToDo("lol");
 new ToDo("bruh");
 
@@ -26,4 +26,6 @@ addBtn.addEventListener("click", () => {
 submitDialog.addEventListener("click", () => {
     new ToDo(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
     toDoDisplay(toDoArray)
+    console.log(easyArray)
+    console.log(toDoArray)
 })
