@@ -1,9 +1,8 @@
-import { toDoArray, easyArray, moderateArray, hardArray } from "./toDoBuilder";
+import { ToDo, toDoArray, easyArray, moderateArray, hardArray } from "./toDoBuilder";
 import {addToDo} from "./addToDo";
 import { toDoDisplay } from "./toDoDisplay";
 
 import './styles.css'
-
 
 
 
@@ -33,5 +32,6 @@ hardBtn.addEventListener("click", () => {
 
 
 toDoDisplay(toDoArray, "Home");
+
 
 addToDo();

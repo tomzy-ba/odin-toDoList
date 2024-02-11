@@ -1,4 +1,4 @@
-import {ToDo, toDoArray} from "./toDoBuilder";
+import {ToDo} from "./toDoBuilder";
 import {toDoDisplay} from "./toDoDisplay";
 
 export function addToDo() {
@@ -19,7 +19,7 @@ addBtn.addEventListener("click", () => {
 })
 submitDialog.addEventListener("click", () => {
     new ToDo(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
-    toDoDisplay(toDoArray);
+    toDoDisplay()
 })
 closeDialog.addEventListener("click", () => {
     dialog.close();
