@@ -20,7 +20,7 @@ export function toDoDisplay(array) {
         const toDoSummary = document.createElement("div");
         toDoInfo.append(toDoSummary);
 
-        const propertyTitle = document.createElement("span");
+        const propertyTitle = document.createElement("h3");
         propertyTitle.innerText = property;
         toDoSummary.append(propertyTitle);
 
