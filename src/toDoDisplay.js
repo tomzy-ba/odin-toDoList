@@ -1,4 +1,12 @@
+
+
 export function toDoDisplay() {
     const content = document.querySelector("#content");
-    content.innerHTML = "hi"
+
+    const homeContent = document.createElement("div");
+    content.append(homeContent);
+
+    const homeList = document.createElement("ul");
+
+
 }

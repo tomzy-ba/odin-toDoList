@@ -1,3 +1,5 @@
+export const toDoArray = [];
+
 export class ToDo {
     constructor(title, summary, dueDate, priority, status, tags) {
         this.title = title;
@@ -6,6 +8,7 @@ export class ToDo {
         this.priority = priority
         this.status = status;
         this.tags = tags;
+        toDoArray.push(this)
     }
 }
 

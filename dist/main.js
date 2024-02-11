@@ -1,0 +1,1 @@
+(()=>{"use strict";const s=[];console.log(new class{constructor(t,i,h,o,c,e){this.title=t,this.summary=i,this.dueDate=h,this.priority=o,this.status=c,this.tags=e,s.push(this)}}("hi","what","is","up")),console.log(s)})();
