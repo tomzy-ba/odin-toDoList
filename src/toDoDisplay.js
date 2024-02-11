@@ -6,10 +6,17 @@ export function toDoDisplay(array) {
 
     const homeList = document.createElement("ul");
     homeContent.append(homeList)
+
     array.forEach(obj => {
-        const toDoItem = document.createElement("li");
-        toDoItem.innerText = obj.title;
-        homeList.append(toDoItem)
+        const toDoLi = document.createElement("li");
+        homeList.append(toDoLi)
+        
+        const toDoBtn = document.createElement("button");
+        toDoBtn.innerText = obj.title;
+        toDoLi.append(toDoBtn)
+
+        toDoBtn.addEventListener("click", () => {
+        })
     });
 
 
