@@ -32,7 +32,13 @@ export function toDoDisplay(array) {
         propertyValue.innerText = obj[property];
         toDoSummary.append(propertyValue);
 
+        const editButton = document.createElement("button");
+        editButton.innerText = "Edit";
+        toDoInfo.append(editButton);
+        editButton.addEventListener("click", () => {
+            propertyValue.innerText = prompt("enter edit here")
 
+        });
         
 
         }
@@ -40,11 +46,14 @@ export function toDoDisplay(array) {
         divTitle.addEventListener("click", () => {
             toDoInfo.classList.toggle("hidden");
         })
+
+
+
         const deleteButton = document.createElement("button");
         deleteButton.innerText = "Delete"
         toDoInfo.append(deleteButton);
         deleteButton.addEventListener("click", () =>{
-            console.log(index)
+            toDoDiv.remove(index)
         })
 
 });
