@@ -10,6 +10,9 @@ new ToDo("bruh");
 toDoDisplay(toDoArray);
 const addBtn = document.querySelector("#addButton");
 const dialog = document.querySelector("#dialog")
+const submitDialog = document.querySelector("#submitDialog");
+const closeDialog = document.querySelector("#closeDialog");
+
 addBtn.addEventListener("click", () =>{
     dialog.showModal();
 })
