@@ -1,4 +1,5 @@
 import { toDoDisplay } from "./toDoDisplay";
+import { toDoArray, easyArray, moderateArray, hardArray } from "./toDoBuilder";
 
    
 export function navbar() {

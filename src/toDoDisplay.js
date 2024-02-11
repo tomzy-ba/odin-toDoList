@@ -7,10 +7,13 @@ export function toDoDisplay(array) {
     const homeContent = document.createElement("div");
     content.append(homeContent);
 
-    array.forEach(obj => {
+    array.forEach((obj, index) => {
         const toDoDiv = document.createElement("div");
-        toDoDiv.innerText = obj.title;
         homeContent.append(toDoDiv)
+
+        const divTitle = document.createElement("h3")
+        divTitle.innerText = obj.title;
+        toDoDiv.append(divTitle);
         
         
         const toDoInfo = document.createElement("div");
@@ -21,7 +24,7 @@ export function toDoDisplay(array) {
         const toDoSummary = document.createElement("div");
         toDoInfo.append(toDoSummary);
 
-        const propertyTitle = document.createElement("h3");
+        const propertyTitle = document.createElement("h4");
         propertyTitle.innerText = property;
         toDoSummary.append(propertyTitle);
 
@@ -29,12 +32,20 @@ export function toDoDisplay(array) {
         propertyValue.innerText = obj[property];
         toDoSummary.append(propertyValue);
 
+
+        
+
         }
 
-        toDoDiv.addEventListener("click", () => {
+        divTitle.addEventListener("click", () => {
             toDoInfo.classList.toggle("hidden");
         })
-    });
+        const deleteButton = document.createElement("button");
+        deleteButton.innerText = "Delete"
+        toDoInfo.append(deleteButton);
+        deleteButton.addEventListener("click", () =>{
+            console.log(index)
+        })
 
-
+});
 }
