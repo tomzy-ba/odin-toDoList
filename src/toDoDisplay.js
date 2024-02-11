@@ -16,6 +16,7 @@ export function toDoDisplay(array) {
         toDoLi.append(toDoBtn)
 
         toDoBtn.addEventListener("click", () => {
+            
         })
     });
 
