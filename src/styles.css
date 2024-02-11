@@ -8,3 +8,14 @@
 .hidden {
     display: none;
 }
+
+
+
+
+
+#dialogDiv {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+}
