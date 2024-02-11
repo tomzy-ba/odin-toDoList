@@ -15,8 +15,13 @@ export function toDoDisplay(array) {
         toDoBtn.innerText = obj.title;
         toDoLi.append(toDoBtn)
 
+        const toDoInfo = document.createElement("div");
+        toDoInfo.innerText = obj.title;
+        toDoInfo.classList.add("hidden");
+        content.append(toDoInfo);
+
         toDoBtn.addEventListener("click", () => {
-            
+            toDoInfo.classList.toggle("hidden");
         })
     });
 
