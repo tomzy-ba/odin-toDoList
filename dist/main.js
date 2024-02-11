@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log(class{constructor(t,s,i,a,h){this.title=t,this.summary=s,this.dueDate=i,this.priority=a,this.status=h,this.tag=tag}})})();
