@@ -1,5 +1,6 @@
 export function toDoDisplay(array) {
     const content = document.querySelector("#content");
+    content.innerHTML = "";
 
     const homeContent = document.createElement("div");
     content.append(homeContent);

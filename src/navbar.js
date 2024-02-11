@@ -1,10 +1,15 @@
-export function navbar() {
-   const homePage = document.querySelector("#homeButton");
-   const easyPage = document.querySelector("#easyButton");
-   const moderatePage = document.querySelector("#moderateButton");
-   const hardPage = document.querySelector("#hardButton");
-   const addPage = document.querySelector("#addButton")
+
+const homeBtn = document.querySelector("#homeButton");
+const easyBtn = document.querySelector("#easyButton");
+const moderateBtn = document.querySelector("#moderateButton");
+const hardBtn = document.querySelector("#hardButton");
+const addBtn = document.querySelector("#addButton")
 
 
-   
+function homeLoad() {
+    const content = document.querySelector("#content");
+
+    const newHomePage = document.createElement("div");
+    newHomePage
 }
+   
