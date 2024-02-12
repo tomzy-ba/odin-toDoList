@@ -13,6 +13,8 @@ export function display(array) {
         
         
         const toDoInfo = document.createElement("div");
+        toDoInfo.classList.add("hidden");
+        toDoDiv.classList.add("toDoDiv")
         toDoDiv.append(toDoInfo);
 
         for (const property in obj) {
@@ -30,6 +32,7 @@ export function display(array) {
         const editButton = document.createElement("button");
         editButton.innerText = "Edit";
         toDoInfo.append(editButton);
+
         editButton.addEventListener("click", () => {
             let newProperty = prompt("Enter edit here");
             propertyValue.innerText = newProperty;
