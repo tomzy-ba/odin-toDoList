@@ -1,5 +1,5 @@
 
-let mainArray = [];
+export let mainArray = [];
 export let easyArray = [];
 export let moderateArray = [];
 export let hardArray = [];
@@ -26,11 +26,14 @@ export class ToDoClass{
     }
 }
 
-let newArray = JSON.stringify(mainArray);
+
+export function storeArray(array) {
+let newArray = JSON.stringify(array);
 localStorage.setItem("newArray", newArray);
 
 let storedArray = localStorage.getItem("newArray");
 storedArray = JSON.parse(storedArray);
-console.log(storedArray);
 
-export let newMainArray = storedArray;
+return storedArray;
+}
+

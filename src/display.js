@@ -9,7 +9,7 @@ export function display(array) {
 
         const divTitle = document.createElement("h3")
         divTitle.innerText = obj.title;
-        divTitle.classList.add(divTitle)
+        divTitle.classList.add("divTitle");
         toDoDiv.append(divTitle);
         
         

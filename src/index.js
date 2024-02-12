@@ -1,11 +1,12 @@
-import { ToDoClass, newMainArray, easyArray, moderateArray, hardArray } from "./toDoClass";
+import { ToDoClass, mainArray, easyArray, moderateArray, hardArray, storeArray} from "./toDoClass";
 import { display } from "./display";
 
 
 import "./styles.css";
 
-new ToDoClass("tilteee", "thisa")
+new ToDoClass("tilteee", "thisa", "lol", "ff", "easy")
 
+storeArray(mainArray)
 
 function navbar(page) {
     const homeBtn = document.querySelector("#homeButton");
@@ -17,7 +18,7 @@ function navbar(page) {
     heading.innerHTML = "Home";
 
     homeBtn.addEventListener("click", () => {
-        display(newMainArray);
+        display(mainArray);
         heading.innerHTML = "Home";
     })
     easyBtn.addEventListener("click", () => {
@@ -52,7 +53,7 @@ addBtn.addEventListener("click", () => {
 })
 submitDialog.addEventListener("click", () => {
     new ToDoClass(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
-    display(newMainArray)
+    display(mainArray)
     
 });
 closeDialog.addEventListener("click", () => {
@@ -64,4 +65,5 @@ closeDialog.addEventListener("click", () => {
 navbar()
 addToDo()
 
-display(newMainArray)
+display(mainArray)
+
