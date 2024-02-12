@@ -1,3 +1,4 @@
+
 export let mainArray = [];
 export let easyArray = [];
 export let moderateArray = [];
@@ -13,8 +14,14 @@ export class ToDoClass{
 
         mainArray.push(this);
 
-        if (difficulty == "easy") {easyArray.push(this)};
-        if (difficulty == "moderate") {moderateArray.push(this)};
-        if (difficulty == "hard") {hardArray.push(this)};
+        if (difficulty == "easy") {
+            easyArray.push(this)
+        }
+        else if(difficulty == "moderate") {
+            moderateArray.push(this)
+        }
+        else if (difficulty == "hard") {
+            hardArray.push(this)
+        };
     }
 }

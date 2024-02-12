@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
 }
+.divTitle:hover {
+    cursor:pointer;
+}
 
 
 
