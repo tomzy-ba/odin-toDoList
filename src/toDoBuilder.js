@@ -1,7 +1,7 @@
-export let toDoArray = [];
-export let easyArray = [];
-export let moderateArray = [];
-export let hardArray = [];
+export let toDoArray = bruh([]);
+export let easyArray = bruh([]);
+export let moderateArray = bruh([]);
+export let hardArray = bruh([]);
 
 export class ToDo {
     constructor(title, summary, dueDate, priority, status, difficulty) {
@@ -19,4 +19,13 @@ export class ToDo {
 }
 
 
+function bruh(enterArray){
+let newArray = JSON.stringify(enterArray);
+localStorage.setItem("toDoArray", newArray);
 
+let storedArray = localStorage.getItem("toDoArray");
+storedArray = JSON.parse(storedArray);
+
+
+return storedArray;
+}
