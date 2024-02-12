@@ -1,4 +1,4 @@
-import { ToDoClass, mainArray, easyArray, moderateArray, hardArray, storeArray} from "./toDoClass";
+import { ToDoClass, mainArray, easyArray, moderateArray, hardArray, storeArrays, loadArrays } from "./toDoClass";
 import { display } from "./display";
 
 
@@ -6,7 +6,6 @@ import "./styles.css";
 
 new ToDoClass("tilteee", "thisa", "lol", "ff", "easy")
 
-storeArray(mainArray)
 
 function navbar(page) {
     const homeBtn = document.querySelector("#homeButton");

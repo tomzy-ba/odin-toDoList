@@ -26,14 +26,18 @@ export class ToDoClass{
     }
 }
 
-
-export function storeArray(array) {
-let newArray = JSON.stringify(array);
-localStorage.setItem("newArray", newArray);
-
-let storedArray = localStorage.getItem("newArray");
-storedArray = JSON.parse(storedArray);
-
-return storedArray;
+export function storeArrays() {
+  localStorage.setItem('mainArray', JSON.stringify(mainArray));
+  localStorage.setItem('easyArray', JSON.stringify(easyArray));
+  localStorage.setItem('moderateArray', JSON.stringify(moderateArray));
+  localStorage.setItem('hardArray', JSON.stringify(hardArray));
 }
+
+export function loadArrays() {
+  mainArray = JSON.parse(localStorage.getItem('mainArray')) || [];
+  easyArray = JSON.parse(localStorage.getItem('easyArray')) || [];
+  moderateArray = JSON.parse(localStorage.getItem('moderateArray')) || [];
+  hardArray = JSON.parse(localStorage.getItem('hardArray')) || [];
+}
+
 
