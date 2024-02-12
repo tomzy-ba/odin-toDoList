@@ -5,7 +5,7 @@ export function display(array) {
 
     array.forEach((obj, index) => {
         const toDoDiv = document.createElement("div");
-        homeContent.append(toDoDiv)
+        content.append(toDoDiv)
 
         const divTitle = document.createElement("h3")
         divTitle.innerText = obj.title;
@@ -13,8 +13,6 @@ export function display(array) {
         
         
         const toDoInfo = document.createElement("div");
-        toDoInfo.classList.add("hidden");
-        toDoDiv.classList.add("toDoDiv")
         toDoDiv.append(toDoInfo);
 
         for (const property in obj) {

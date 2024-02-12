@@ -1,7 +1,7 @@
-let mainArray = [];
-let easyArray = [];
-let moderateArray = [];
-let hardArray = [];
+export let mainArray = [];
+export let easyArray = [];
+export let moderateArray = [];
+export let hardArray = [];
 
 export class ToDoClass{
     constructor(title, summary, dueDate, status, difficulty) {
@@ -11,8 +11,8 @@ export class ToDoClass{
         this.status = status;
         this.difficulty = difficulty;
 
-
         mainArray.push(this);
+
         if (difficulty == "easy") {easyArray.push(this)};
         if (difficulty == "moderate") {moderateArray.push(this)};
         if (difficulty == "hard") {hardArray.push(this)};
