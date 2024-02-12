@@ -1,7 +1,7 @@
-export const toDoArray = [];
-export const easyArray = [];
-export const moderateArray = [];
-export const hardArray = [];
+export let toDoArray = [];
+export let easyArray = [];
+export let moderateArray = [];
+export let hardArray = [];
 
 export class ToDo {
     constructor(title, summary, dueDate, priority, status, difficulty) {

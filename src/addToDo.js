@@ -18,8 +18,9 @@ addBtn.addEventListener("click", () => {
     dialog.showModal();
 })
 submitDialog.addEventListener("click", () => {
-    new ToDo(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
-})
+    let newToDo = new ToDo(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
+
+});
 closeDialog.addEventListener("click", () => {
     dialog.close();
 })
