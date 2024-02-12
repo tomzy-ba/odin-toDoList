@@ -6,7 +6,8 @@ import "./styles.css"
 
 
 new ToDoClass("bruh", "LOL")
-function navbar() {
+
+function navbar(page) {
     const homeBtn = document.querySelector("#homeButton");
     const easyBtn = document.querySelector("#easyButton");
     const moderateBtn = document.querySelector("#moderateButton");
@@ -51,8 +52,8 @@ addBtn.addEventListener("click", () => {
     dialog.showModal();
 })
 submitDialog.addEventListener("click", () => {
-    let newToDo = new ToDo(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
-
+    new ToDoClass(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
+    display("reload")
 });
 closeDialog.addEventListener("click", () => {
     dialog.close();
@@ -60,6 +61,7 @@ closeDialog.addEventListener("click", () => {
 }
 
 navbar()
+addToDo()
 
 console.log(mainArray);
 display(mainArray)

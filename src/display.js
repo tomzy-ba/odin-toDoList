@@ -2,6 +2,10 @@ export function display(array) {
     const content = document.querySelector("#content");
     content.innerHTML = "";
 
+    if (array === "reload") {
+        return (console.log("based"));
+    }
+    let oldArray = array;
 
     array.forEach((obj, index) => {
         const toDoDiv = document.createElement("div");
