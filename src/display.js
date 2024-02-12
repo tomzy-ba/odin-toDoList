@@ -3,9 +3,8 @@ export function display(array) {
     content.innerHTML = "";
 
     if (array === "reload") {
-        return (console.log("based"));
+        console.log("lol");
     }
-    let oldArray = array;
 
     array.forEach((obj, index) => {
         const toDoDiv = document.createElement("div");
