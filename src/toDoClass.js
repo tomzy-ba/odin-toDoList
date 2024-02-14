@@ -11,7 +11,7 @@ export class ToDoClass{
         this.dueDate = dueDate;
         this.status = status;
         this.difficulty = difficulty;
-        this.index = 
+        this.index = ""
 
         mainArray.push(this);
 
