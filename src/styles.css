@@ -51,3 +51,8 @@ body {
 #content {
     margin: 1rem;
 }
+
+.toDoDiv button {
+    background-color: lightcoral;
+
+}
