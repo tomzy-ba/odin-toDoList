@@ -1,3 +1,4 @@
+import { loadArrays, storeArrays } from "./toDoClass";
 export function display(array) {
     const content = document.querySelector("#content");
     content.innerHTML = "";
@@ -54,6 +55,8 @@ export function display(array) {
         toDoInfo.append(deleteButton);
         deleteButton.addEventListener("click", () =>{
             toDoDiv.remove(index)
+            console.log(obj.difficulty)
+            console.log(obj)
         })
 
 });

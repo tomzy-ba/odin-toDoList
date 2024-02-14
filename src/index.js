@@ -4,7 +4,6 @@ import { display } from "./display";
 
 import "./styles.css";
 
-new ToDoClass("tilteee", "thisa", "lol", "ff", "easy")
 
 
 function navbar(page) {
@@ -53,6 +52,7 @@ addBtn.addEventListener("click", () => {
 submitDialog.addEventListener("click", () => {
     new ToDoClass(title.value, summary.value, dueDate.value, priority.value, status.value, difficulty.value)
     display(mainArray)
+    storeArrays();
     
 });
 closeDialog.addEventListener("click", () => {
@@ -60,6 +60,8 @@ closeDialog.addEventListener("click", () => {
 })
 }
 
+const interval = setInterval(storeArrays, 3000);
+loadArrays();
 
 navbar()
 addToDo()
