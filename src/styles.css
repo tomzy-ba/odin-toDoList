@@ -38,6 +38,9 @@ body {
     flex-direction: column;
     border: 1px solid black;
 }
+.toDoDiv div {
+    padding: 5px;
+}
 .divTitle:hover {
     cursor:pointer;
 }
