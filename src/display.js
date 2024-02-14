@@ -11,12 +11,16 @@ export function display(array) {
         const divTitle = document.createElement("h3")
         divTitle.innerText = obj.title;
         divTitle.classList.add("divTitle");
+
+        if (divTitle.innerText === "") {divTitle.innerText = "hello"}
+
         toDoDiv.append(divTitle);
         
         
         const toDoInfo = document.createElement("div");
         toDoInfo.classList.add("hidden");
         toDoDiv.classList.add("toDoDiv")
+
         toDoDiv.append(toDoInfo);
 
         for (const property in obj) {
@@ -30,7 +34,9 @@ export function display(array) {
         const propertyValue = document.createElement("span");
         propertyValue.classList.add("propertyValue")
         propertyValue.innerText = obj[property];
+
         toDoSummary.append(propertyValue);
+
 
         propertyValue.addEventListener("click", () => {
             let newProperty = prompt("Enter edit here");
