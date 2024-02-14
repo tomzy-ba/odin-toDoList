@@ -6,7 +6,7 @@ import "./styles.css";
 
 
 
-function navbar(page) {
+function navbar() {
     const homeBtn = document.querySelector("#homeButton");
     const easyBtn = document.querySelector("#easyButton");
     const moderateBtn = document.querySelector("#moderateButton");

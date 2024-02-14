@@ -1,8 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    color:black;
+}
+
+#header {
+    margin: 0;
+    padding: 5px;
+}
 
 #navbarList {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+}
+.navbarButton {
+    border: 1px solid black;
+    background-color: lightcoral;
+    border-radius: 3px;
+    width: 7rem;
+    font-size: 1rem;
+}
+.navbarButton:hover {
+    background-color: lightsalmon;
 }
 
 .hidden {
