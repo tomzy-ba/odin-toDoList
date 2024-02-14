@@ -1,3 +1,4 @@
+import { storeArrays } from "./toDoClass";
 export function display(array) {
     const content = document.querySelector("#content");
     content.innerHTML = "";
@@ -38,6 +39,8 @@ export function display(array) {
             let newProperty = prompt("Enter edit here");
             propertyValue.innerText = newProperty;
             obj[propertyTitle.innerText] = newProperty;
+            obj[property] = newProperty;
+            
         });
         
 
@@ -55,6 +58,7 @@ export function display(array) {
         deleteButton.addEventListener("click", () =>{
             toDoDiv.remove(index);
             array.splice(index, 1)
+            storeArrays();
 
         })
 
