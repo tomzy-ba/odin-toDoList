@@ -40,6 +40,10 @@ body {
     cursor:pointer;
 }
 
+.propertyValue {
+    border: 1px solid black;
+    padding: 6px;
+}
 
 
 #dialogDiv {
@@ -52,7 +56,3 @@ body {
     margin: 1rem;
 }
 
-.toDoDiv button {
-    background-color: lightcoral;
-
-}

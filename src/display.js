@@ -28,14 +28,11 @@ export function display(array) {
         toDoSummary.append(propertyTitle);
 
         const propertyValue = document.createElement("span");
+        propertyValue.classList.add("propertyValue")
         propertyValue.innerText = obj[property];
         toDoSummary.append(propertyValue);
 
-        const editButton = document.createElement("button");
-        editButton.innerText = "Edit";
-        toDoInfo.append(editButton);
-
-        editButton.addEventListener("click", () => {
+        propertyValue.addEventListener("click", () => {
             let newProperty = prompt("Enter edit here");
             propertyValue.innerText = newProperty;
             obj[propertyTitle.innerText] = newProperty;
