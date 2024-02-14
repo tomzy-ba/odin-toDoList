@@ -48,3 +48,6 @@ body {
     width: 70%;
     height: 70%;
 }
+#content {
+    margin: 1rem;
+}

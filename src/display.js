@@ -39,8 +39,6 @@ export function display(array) {
             let newProperty = prompt("Enter edit here");
             propertyValue.innerText = newProperty;
             obj[propertyTitle.innerText] = newProperty;
-            obj[property] = newProperty;
-            
         });
         
 
