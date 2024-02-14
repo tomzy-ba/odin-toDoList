@@ -1,14 +1,15 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
-    color:black;
 }
 
 #header {
     margin: 0;
     padding: 5px;
+    background-color: antiquewhite;
 }
+
 
 #navbarList {
     display: flex;
